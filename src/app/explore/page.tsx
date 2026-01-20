@@ -114,7 +114,7 @@ export default function ExplorePage() {
             <div className="flex-1">
               <p className="text-amber-800 font-medium text-sm">AmiiboAPI is currently unavailable</p>
               <p className="text-amber-700 text-xs">
-                We use the free <a href="https://www.amiiboapi.com/" target="_blank" rel="noopener noreferrer" className="underline hover:text-amber-900">AmiiboAPI</a> service to fetch amiibo data.
+                We use the free <a href="https://www.amiiboapi.org/" target="_blank" rel="noopener noreferrer" className="underline hover:text-amber-900">AmiiboAPI</a> service to fetch amiibo data.
                 The service appears to be down at the moment. Please check back later!
               </p>
             </div>
@@ -281,7 +281,7 @@ export default function ExplorePage() {
                 </div>
                 <h2 className="text-2xl font-bold text-gray-900 mb-3">Explore is temporarily unavailable</h2>
                 <p className="text-gray-600 mb-4">
-                  We rely on the free <a href="https://www.amiiboapi.com/" target="_blank" rel="noopener noreferrer" className="text-red-500 underline hover:text-red-600">AmiiboAPI</a> service
+                  We rely on the free <a href="https://www.amiiboapi.org/" target="_blank" rel="noopener noreferrer" className="text-red-500 underline hover:text-red-600">AmiiboAPI</a> service
                   to provide amiibo data. The service appears to be down at the moment.
                 </p>
                 <p className="text-gray-500 text-sm mb-6">

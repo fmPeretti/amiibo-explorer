@@ -2,7 +2,7 @@ import { NextResponse } from 'next/server';
 
 // AmiiboAPI health check endpoint
 // Tests if the external AmiiboAPI service is available
-const AMIIBO_API_BASE = 'https://www.amiiboapi.com/api';
+const AMIIBO_API_BASE = 'https://www.amiiboapi.org/api';
 
 export async function GET() {
   try {

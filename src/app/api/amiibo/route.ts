@@ -1,8 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server';
 
 // AmiiboAPI - Free external API service
-// https://www.amiiboapi.com/
-const AMIIBO_API_BASE = 'https://www.amiiboapi.com/api';
+// https://www.amiiboapi.org/
+const AMIIBO_API_BASE = 'https://www.amiiboapi.org/api';
 
 export async function GET(request: NextRequest) {
   try {

@@ -105,7 +105,7 @@ export default function Home() {
           <p className="text-gray-500 text-sm">
             Powered by the{" "}
             <a
-              href="https://www.amiiboapi.com/"
+              href="https://www.amiiboapi.org/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-700 hover:text-gray-900 transition-colors underline"
