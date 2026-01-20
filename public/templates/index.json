@@ -1,0 +1,11 @@
+{
+  "templates": [
+    {
+      "id": "smash-bros-coins",
+      "name": "Super Smash Bros. Coins",
+      "description": "30mm coins featuring popular Smash Bros. fighters",
+      "author": "Amiibo Coin Generator"
+    }
+  ],
+  "lastUpdated": "2025-01-18T00:00:00.000Z"
+}

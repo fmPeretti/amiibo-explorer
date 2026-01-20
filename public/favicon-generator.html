@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favicon Generator</title>
+</head>
+<body style="margin: 0; padding: 20px; background: #f0f0f0;">
+    <h2>Right-click the image below and save as "favicon.ico"</h2>
+    <canvas id="favicon" width="32" height="32" style="border: 1px solid #ccc; image-rendering: pixelated; width: 128px; height: 128px;"></canvas>
+
+    <script>
+        const canvas = document.getElementById('favicon');
+        const ctx = canvas.getContext('2d');
+
+        // White background
+        ctx.fillStyle = '#000000';
+        ctx.fillRect(0, 0, 32, 32);
+
+        // Right confetti pattern from the logo
+        // Top row confetti
+        // Orange square (top-left) - rotated -15deg
+        ctx.save();
+        ctx.translate(8, 8);
+        ctx.rotate(-15 * Math.PI / 180);
+        ctx.fillStyle = '#f97316'; // orange-500
+        ctx.fillRect(-3, -3, 6, 6);
+        ctx.restore();
+
+        // Emerald square (top-right) - rotated 20deg
+        ctx.save();
+        ctx.translate(24, 8);
+        ctx.rotate(20 * Math.PI / 180);
+        ctx.fillStyle = '#10b981'; // emerald-500
+        ctx.fillRect(-3, -3, 6, 6);
+        ctx.restore();
+
+        // Bottom row confetti
+        // Pink square (bottom-left) - rotated 15deg
+        ctx.save();
+        ctx.translate(8, 24);
+        ctx.rotate(15 * Math.PI / 180);
+        ctx.fillStyle = '#ec4899'; // pink-500
+        ctx.fillRect(-3, -3, 6, 6);
+        ctx.restore();
+
+        // Cyan square (bottom-right) - rotated -20deg
+        ctx.save();
+        ctx.translate(24, 24);
+        ctx.rotate(-20 * Math.PI / 180);
+        ctx.fillStyle = '#06b6d4'; // cyan-500
+        ctx.fillRect(-3, -3, 6, 6);
+        ctx.restore();
+
+        // Download as PNG (we'll convert to ICO later)
+        setTimeout(() => {
+            const link = document.createElement('a');
+            link.download = 'favicon.png';
+            link.href = canvas.toDataURL();
+            console.log('Canvas ready! You can right-click and save the image, or click the download link that will appear.');
+
+            const downloadBtn = document.createElement('button');
+            downloadBtn.textContent = 'Download as PNG';
+            downloadBtn.style.cssText = 'margin-top: 20px; padding: 10px 20px; font-size: 16px; cursor: pointer;';
+            downloadBtn.onclick = () => link.click();
+            document.body.appendChild(downloadBtn);
+        }, 100);
+    </script>
+</body>
+</html>

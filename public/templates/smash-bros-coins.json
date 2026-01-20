@@ -1,0 +1,76 @@
+{
+  "id": "smash-bros-coins",
+  "name": "Super Smash Bros. Coins",
+  "description": "30mm coins featuring popular Smash Bros. fighters",
+  "author": "Amiibo Coin Generator",
+  "createdAt": "2025-01-18T00:00:00.000Z",
+  "updatedAt": "2025-01-18T00:00:00.000Z",
+  "templateType": "coin",
+  "pageSize": "A4",
+  "diameter": 30,
+  "cardWidth": 54,
+  "cardHeight": 85,
+  "margin": 5,
+  "spacing": 5,
+  "seriesBackDesigns": {
+    "Super Smash Bros.": "amiibo-logo"
+  },
+  "imageAdjustments": {},
+  "items": [
+    {
+      "name": "Mario",
+      "amiiboSeries": "Super Smash Bros.",
+      "gameSeries": "Super Mario",
+      "head": "00000000",
+      "tail": "00000002",
+      "type": "Figure",
+      "image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_00000000-00000002.png"
+    },
+    {
+      "name": "Link",
+      "amiiboSeries": "Super Smash Bros.",
+      "gameSeries": "The Legend of Zelda",
+      "head": "01000000",
+      "tail": "00000002",
+      "type": "Figure",
+      "image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_01000000-00000002.png"
+    },
+    {
+      "name": "Pikachu",
+      "amiiboSeries": "Super Smash Bros.",
+      "gameSeries": "Pokemon",
+      "head": "19010000",
+      "tail": "00000002",
+      "type": "Figure",
+      "image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_19010000-00000002.png"
+    },
+    {
+      "name": "Kirby",
+      "amiiboSeries": "Super Smash Bros.",
+      "gameSeries": "Kirby",
+      "head": "1f000000",
+      "tail": "00000002",
+      "type": "Figure",
+      "image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_1f000000-00000002.png"
+    },
+    {
+      "name": "Samus",
+      "amiiboSeries": "Super Smash Bros.",
+      "gameSeries": "Metroid",
+      "head": "08000000",
+      "tail": "00000002",
+      "type": "Figure",
+      "image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_08000000-00000002.png"
+    },
+    {
+      "name": "Donkey Kong",
+      "amiiboSeries": "Super Smash Bros.",
+      "gameSeries": "Donkey Kong",
+      "head": "06000000",
+      "tail": "00000002",
+      "type": "Figure",
+      "image": "https://raw.githubusercontent.com/N3evin/AmiiboAPI/master/images/icon_06000000-00000002.png"
+    }
+  ],
+  "listName": "Smash Bros. Favorites"
+}

@@ -1,0 +1,16 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Right confetti - matching Header.tsx EXACTLY -->
+  <!-- flex-col layout with gap-3px, mb-2px between rows, items-end/items-start alignment -->
+
+  <!-- Top row: gap-3px, items-end, mb-2px -->
+  <!-- Orange with -mb-2px -->
+  <rect x="4" y="8" width="12" height="12" fill="#f97316" transform="rotate(-15 10 14)"/>
+  <!-- Emerald -->
+  <rect x="19" y="8" width="12" height="12" fill="#10b981" transform="rotate(20 25 14)"/>
+
+  <!-- Bottom row: gap-3px, items-start, -mt-2px on pink -->
+  <!-- Pink with -mt-2px -->
+  <rect x="4" y="20" width="12" height="12" fill="#ec4899" transform="rotate(15 10 26)"/>
+  <!-- Cyan -->
+  <rect x="19" y="22" width="12" height="12" fill="#06b6d4" transform="rotate(-20 25 28)"/>
+</svg>
