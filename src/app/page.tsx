@@ -75,12 +75,12 @@ export default function Home() {
           </Link>
 
           <Link
-            href="/generator"
+            href="/templates"
             className="group bg-white rounded-2xl p-6 border-2 border-green-500 hover:border-green-600 transition-all duration-200 shadow-lg hover:shadow-xl hover:scale-105"
           >
             <div className="text-5xl mb-3">🎨</div>
             <h2 className="text-xl font-bold text-gray-900 mb-2">
-              Template Generator
+              Templates
             </h2>
             <p className="text-sm text-gray-600">
               Generate printable coins or cards from your lists.
@@ -88,15 +88,15 @@ export default function Home() {
           </Link>
 
           <Link
-            href="/templates"
+            href="/guides"
             className="group bg-white rounded-2xl p-6 border-2 border-yellow-500 hover:border-yellow-600 transition-all duration-200 shadow-lg hover:shadow-xl hover:scale-105"
           >
-            <div className="text-5xl mb-3">💾</div>
+            <div className="text-5xl mb-3">📖</div>
             <h2 className="text-xl font-bold text-gray-900 mb-2">
-              Saved Templates
+              Guides
             </h2>
             <p className="text-sm text-gray-600">
-              Access your saved templates and regenerate designs.
+              Learn how to create amiibo coins and cards.
             </p>
           </Link>
         </div>
