@@ -4,7 +4,7 @@ https://www.amiiboexplorer.com
 A web app to generate printable amiibo coin and card templates from amiibo lists.
 
 ##Why?
-I wanted to make some amiibo coins for my fiancée so she could invite villagers to her little ACNH Island and needed to generate some artwork... And so after an hour of fighting with Canva and Adobe (spooky software) I thought to my self *´im a dev not a graphic designer...´* So instead of manually positioning images like a normal person would do, I figured it would be easier to just automate the whole thing. (going from a couple hours task to a weekend task, but hey!!! Someone else can maybe use it now, we have to think about the net positive!! doubt no one will ever use it tho but *"I can dream harold"*)
+I wanted to make some amiibo coins for my fiancée so she could invite villagers to her little ACNH Island and needed to generate some artwork... And so after an hour of fighting with Canva and Adobe (spooky software) I thought to my self *´im a dev not a graphic designer...´* So instead of manually positioning images like a normal person would do, I figured it would be easier to just automate the whole thing. (going from a couple hours task to a weekend task, but hey!!! Someone else can maybe use it now, we have to think about the net positive!! doubt no one will ever use it tho but *["I can dream harold"](https://www.youtube.com/watch?v=bYJOfJQDMX4)*)
 
 With this app you can browse the complete amiibo catalog, create custom lists, and generate print-ready PDF templates for coins or cards. You can adjust image positions, set custom dimensions, add back designs, and export everything ready for printing.
 
