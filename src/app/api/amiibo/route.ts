@@ -4,6 +4,16 @@ import { NextRequest, NextResponse } from 'next/server';
 // https://www.amiiboapi.org/
 const AMIIBO_API_BASE = 'https://www.amiiboapi.org/api';
 
+// Cache durations in seconds
+const CACHE_DURATION = {
+  amiibo: 86400,      // 24 hours - amiibo data rarely changes
+  type: 604800,       // 7 days - types almost never change
+  amiiboseries: 604800, // 7 days - series almost never change
+  gameseries: 604800,   // 7 days - game series almost never change
+  character: 604800,    // 7 days - characters almost never change
+  default: 86400,     // 24 hours - default for other endpoints
+};
+
 export async function GET(request: NextRequest) {
   try {
     // Get the path from query params
@@ -21,9 +31,13 @@ export async function GET(request: NextRequest) {
     const queryString = params.toString();
     const url = `${AMIIBO_API_BASE}/${path}${queryString ? `?${queryString}` : ''}`;
 
-    console.log('Proxying request to:', url);
+    // Determine cache duration based on the endpoint
+    const endpoint = path.split('/')[0] || 'default';
+    const revalidate = CACHE_DURATION[endpoint as keyof typeof CACHE_DURATION] || CACHE_DURATION.default;
 
-    const response = await fetch(url);
+    const response = await fetch(url, {
+      next: { revalidate }, // Cache with revalidation
+    });
 
     if (!response.ok) {
       console.error('API response not OK:', response.status, response.statusText);
