@@ -13,25 +13,24 @@ export interface CommunityTemplate extends Omit<TemplateConfig, "id" | "createdA
   updatedAt: string;
 }
 
-// Index file structure
-interface CommunityTemplateIndex {
-  templates: {
-    id: string;
-    name: string;
-    description?: string;
-    author?: string;
-  }[];
-  lastUpdated: string;
+// Index entry structure
+interface CommunityTemplateIndexEntry {
+  id: string;
+  name: string;
+  description?: string;
+  author?: string;
+  templateType?: string;
+  itemCount?: number;
 }
 
 const COMMUNITY_TEMPLATES_PATH = "/templates";
 
 // Cache for loaded templates
-let indexCache: CommunityTemplateIndex | null = null;
+let indexCache: CommunityTemplateIndexEntry[] | null = null;
 let templateCache: Map<string, CommunityTemplate> = new Map();
 
 // Fetch the index of available community templates
-export async function getCommunityTemplateIndex(): Promise<CommunityTemplateIndex | null> {
+export async function getCommunityTemplateIndex(): Promise<CommunityTemplateIndexEntry[] | null> {
   if (indexCache) return indexCache;
 
   try {
@@ -69,11 +68,11 @@ export async function getCommunityTemplate(id: string): Promise<CommunityTemplat
 // Fetch all community templates
 export async function getAllCommunityTemplates(): Promise<CommunityTemplate[]> {
   const index = await getCommunityTemplateIndex();
-  if (!index) return [];
+  if (!index || !Array.isArray(index)) return [];
 
   const templates: CommunityTemplate[] = [];
 
-  for (const entry of index.templates) {
+  for (const entry of index) {
     const template = await getCommunityTemplate(entry.id);
     if (template) {
       // Merge index metadata with template data
