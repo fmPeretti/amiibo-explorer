@@ -3,12 +3,22 @@ https://www.amiiboexplorer.com
 
 A web app to generate printable amiibo coin and card templates from amiibo lists.
 
-##Why?
-I wanted to make some amiibo coins for my fiancée so she could invite villagers to her little ACNH Island and needed to generate some artwork... And so after an hour of fighting with Canva and Adobe (spooky software) I thought to my self *´im a dev not a graphic designer...´* So instead of manually positioning images like a normal person would do, I figured it would be easier to just automate the whole thing. (going from a couple hours task to a weekend task, but hey!!! Someone else can maybe use it now, we have to think about the net positive!! doubt no one will ever use it tho but *["I can dream harold"](https://www.youtube.com/watch?v=bYJOfJQDMX4)*)
+## Why?
+I wanted to make some amiibo coins for my fiancée so she could invite villagers to her little ACNH Island and needed to generate some artwork... And so after an hour of fighting with Canva and Adobe (spooky software) I thought to my self *im a dev not a graphic designer...* So instead of manually positioning images like a normal person would do, I figured it would be easier to just automate the whole thing.
+(going from a couple hours task to a whole weekend project, but hey!!! Someone else can maybe use it now, we have to think about the net positive!! doubt no one will ever use it tho but *<a href="https://www.youtube.com/watch?v=bYJOfJQDMX4" target="_blank">"I can dream harold"</a>*)
 
 With this app you can browse the complete amiibo catalog, create custom lists, and generate print-ready PDF templates for coins or cards. You can adjust image positions, set custom dimensions, add back designs, and export everything ready for printing.
 
 Built this in a weekend, so I know for a fact there's infinite room for improvements and new features. Feel free to open any issue or PR and I'll review and merge it!
+
+
+## Thanks to AmiiboAPI
+
+This app relies entirely on [AmiiboAPI](https://www.amiiboapi.org/) - a free, open-source RESTful API that provides all the amiibo data and images.
+
+If you like this app, please go support them! They're providing this service for free and it's what makes this project possible.
+
+If they ever stop hosting the API, I might continue hosting it myself for a while because I really like the project.
 
 ## Features
 
@@ -61,14 +71,6 @@ npm start
 - [Tailwind CSS 4](https://tailwindcss.com/) - Styling
 - [jsPDF](https://github.com/parallax/jsPDF) - PDF generation
 - [AmiiboAPI](https://www.amiiboapi.org/) - Amiibo data
-
-## Thanks to AmiiboAPI
-
-This app relies entirely on [AmiiboAPI](https://www.amiiboapi.org/) - a free, open-source RESTful API that provides all the amiibo data and images.
-
-If you like this app, please go support them! They're providing this service for free and it's what makes this project possible.
-
-If they ever stop hosting the API, I might continue hosting it myself for a while because I really like the project.
 
 ## Project Structure
 
