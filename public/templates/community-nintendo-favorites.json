@@ -1,0 +1,111 @@
+{
+  "id": "community-nintendo-favorites",
+  "name": "Nintendo All-Stars",
+  "description": "Iconic Nintendo characters from across the gaming universe - the ultimate collection!",
+  "author": "Amiibo Explorer",
+  "templateType": "coin",
+  "pageSize": "A4",
+  "diameter": 30,
+  "cardWidth": 54,
+  "cardHeight": 85,
+  "margin": 5,
+  "spacing": 5,
+  "items": [
+    {
+      "head": "00000000",
+      "tail": "00000002",
+      "name": "Mario",
+      "image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_00000000-00000002.png",
+      "amiiboSeries": "Super Smash Bros.",
+      "gameSeries": "Super Mario"
+    },
+    {
+      "head": "01000000",
+      "tail": "00040002",
+      "name": "Link",
+      "image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01000000-00040002.png",
+      "amiiboSeries": "Super Smash Bros.",
+      "gameSeries": "The Legend of Zelda"
+    },
+    {
+      "head": "05c00000",
+      "tail": "00060002",
+      "name": "Samus",
+      "image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_05c00000-00060002.png",
+      "amiiboSeries": "Super Smash Bros.",
+      "gameSeries": "Metroid"
+    },
+    {
+      "head": "19190000",
+      "tail": "00090002",
+      "name": "Pikachu",
+      "image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_19190000-00090002.png",
+      "amiiboSeries": "Super Smash Bros.",
+      "gameSeries": "Pokemon"
+    },
+    {
+      "head": "1f000000",
+      "tail": "000a0002",
+      "name": "Kirby",
+      "image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_1f000000-000a0002.png",
+      "amiiboSeries": "Super Smash Bros.",
+      "gameSeries": "Kirby"
+    },
+    {
+      "head": "00080000",
+      "tail": "00030002",
+      "name": "Donkey Kong",
+      "image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_00080000-00030002.png",
+      "amiiboSeries": "Super Smash Bros.",
+      "gameSeries": "Super Mario"
+    },
+    {
+      "head": "05800000",
+      "tail": "00050002",
+      "name": "Fox",
+      "image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_05800000-00050002.png",
+      "amiiboSeries": "Super Smash Bros.",
+      "gameSeries": "Star Fox"
+    },
+    {
+      "head": "00030000",
+      "tail": "00020002",
+      "name": "Yoshi",
+      "image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_00030000-00020002.png",
+      "amiiboSeries": "Super Smash Bros.",
+      "gameSeries": "Super Mario"
+    },
+    {
+      "head": "01010000",
+      "tail": "000e0002",
+      "name": "Zelda",
+      "image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01010000-000e0002.png",
+      "amiiboSeries": "Super Smash Bros.",
+      "gameSeries": "The Legend of Zelda"
+    },
+    {
+      "head": "00020000",
+      "tail": "00010002",
+      "name": "Peach",
+      "image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_00020000-00010002.png",
+      "amiiboSeries": "Super Smash Bros.",
+      "gameSeries": "Super Mario"
+    },
+    {
+      "head": "00010000",
+      "tail": "000c0002",
+      "name": "Luigi",
+      "image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_00010000-000c0002.png",
+      "amiiboSeries": "Super Smash Bros.",
+      "gameSeries": "Super Mario"
+    },
+    {
+      "head": "06000000",
+      "tail": "00120002",
+      "name": "Captain Falcon",
+      "image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_06000000-00120002.png",
+      "amiiboSeries": "Super Smash Bros.",
+      "gameSeries": "F-Zero"
+    }
+  ]
+}

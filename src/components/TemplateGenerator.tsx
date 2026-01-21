@@ -294,6 +294,10 @@ export default function TemplateGenerator({ items, listName, onClose, initialCon
       }
       setTimeout(() => setTemplateToast(null), 3000);
     };
+    reader.onerror = () => {
+      setTemplateToast("Failed to read file");
+      setTimeout(() => setTemplateToast(null), 3000);
+    };
     reader.readAsText(file);
     if (templateImportRef.current) {
       templateImportRef.current.value = "";
@@ -467,6 +471,10 @@ export default function TemplateGenerator({ items, listName, onClose, initialCon
         setCustomBackImages(prev => new Map(prev).set(series, dataUrl));
         setSeriesBackDesign(series, "custom");
         setEditingSeriesBack(null);
+      };
+      reader.onerror = () => {
+        setTemplateToast("Failed to load image");
+        setTimeout(() => setTemplateToast(null), 3000);
       };
       reader.readAsDataURL(file);
     }

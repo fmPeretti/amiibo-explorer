@@ -1,0 +1,95 @@
+{
+  "id": "community-mario-collection",
+  "name": "Super Mario Collection",
+  "description": "Classic Super Mario Bros. amiibo figures - Mario, Luigi, Peach, and friends!",
+  "author": "Amiibo Explorer",
+  "templateType": "coin",
+  "pageSize": "A4",
+  "diameter": 30,
+  "cardWidth": 54,
+  "cardHeight": 85,
+  "margin": 5,
+  "spacing": 5,
+  "items": [
+    {
+      "head": "00170000",
+      "tail": "02680102",
+      "name": "Boo",
+      "image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_00170000-02680102.png",
+      "amiiboSeries": "Super Mario Bros.",
+      "gameSeries": "Super Mario"
+    },
+    {
+      "head": "00040000",
+      "tail": "02620102",
+      "name": "Rosalina",
+      "image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_00040000-02620102.png",
+      "amiiboSeries": "Super Mario Bros.",
+      "gameSeries": "Super Mario"
+    },
+    {
+      "head": "00010000",
+      "tail": "00350102",
+      "name": "Luigi",
+      "image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_00010000-00350102.png",
+      "amiiboSeries": "Super Mario Bros.",
+      "gameSeries": "Super Mario"
+    },
+    {
+      "head": "00030000",
+      "tail": "00370102",
+      "name": "Yoshi",
+      "image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_00030000-00370102.png",
+      "amiiboSeries": "Super Mario Bros.",
+      "gameSeries": "Super Mario"
+    },
+    {
+      "head": "00050000",
+      "tail": "03730102",
+      "name": "Bowser - Wedding",
+      "image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_00050000-03730102.png",
+      "amiiboSeries": "Super Mario Bros.",
+      "gameSeries": "Super Mario"
+    },
+    {
+      "head": "00000000",
+      "tail": "00340102",
+      "name": "Mario",
+      "image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_00000000-00340102.png",
+      "amiiboSeries": "Super Mario Bros.",
+      "gameSeries": "Super Mario"
+    },
+    {
+      "head": "00020000",
+      "tail": "03720102",
+      "name": "Peach - Wedding",
+      "image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_00020000-03720102.png",
+      "amiiboSeries": "Super Mario Bros.",
+      "gameSeries": "Super Mario"
+    },
+    {
+      "head": "00000300",
+      "tail": "03a60102",
+      "name": "Mario - Cat",
+      "image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_00000300-03a60102.png",
+      "amiiboSeries": "Super Mario Bros.",
+      "gameSeries": "Super Mario"
+    },
+    {
+      "head": "00000000",
+      "tail": "03710102",
+      "name": "Mario - Wedding",
+      "image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_00000000-03710102.png",
+      "amiiboSeries": "Super Mario Bros.",
+      "gameSeries": "Super Mario"
+    },
+    {
+      "head": "00020100",
+      "tail": "03a70102",
+      "name": "Peach - Cat",
+      "image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_00020100-03a70102.png",
+      "amiiboSeries": "Super Mario Bros.",
+      "gameSeries": "Super Mario"
+    }
+  ]
+}

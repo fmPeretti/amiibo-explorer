@@ -1,0 +1,111 @@
+{
+  "id": "community-ac-cards",
+  "name": "Animal Crossing Card Collection",
+  "description": "Popular Animal Crossing villager cards - perfect for card-sized prints!",
+  "author": "Amiibo Explorer",
+  "templateType": "card",
+  "pageSize": "A4",
+  "diameter": 30,
+  "cardWidth": 54,
+  "cardHeight": 85,
+  "margin": 5,
+  "spacing": 5,
+  "items": [
+    {
+      "head": "0a0f0001",
+      "tail": "03c60502",
+      "name": "Raymond",
+      "image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_0a0f0001-03c60502.png",
+      "amiiboSeries": "Animal Crossing",
+      "gameSeries": "Animal Crossing"
+    },
+    {
+      "head": "04ee0001",
+      "tail": "014b0502",
+      "name": "Marshal",
+      "image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_04ee0001-014b0502.png",
+      "amiiboSeries": "Animal Crossing",
+      "gameSeries": "Animal Crossing"
+    },
+    {
+      "head": "02700001",
+      "tail": "00ff0502",
+      "name": "Ankha",
+      "image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_02700001-00ff0502.png",
+      "amiiboSeries": "Animal Crossing",
+      "gameSeries": "Animal Crossing"
+    },
+    {
+      "head": "02d60001",
+      "tail": "00560502",
+      "name": "Fauna",
+      "image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_02d60001-00560502.png",
+      "amiiboSeries": "Animal Crossing",
+      "gameSeries": "Animal Crossing"
+    },
+    {
+      "head": "025d0001",
+      "tail": "00550502",
+      "name": "Bob",
+      "image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_025d0001-00550502.png",
+      "amiiboSeries": "Animal Crossing",
+      "gameSeries": "Animal Crossing"
+    },
+    {
+      "head": "0a0e0001",
+      "tail": "03c50502",
+      "name": "Judy",
+      "image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_0a0e0001-03c50502.png",
+      "amiiboSeries": "Animal Crossing",
+      "gameSeries": "Animal Crossing"
+    },
+    {
+      "head": "02de0001",
+      "tail": "009c0502",
+      "name": "Diana",
+      "image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_02de0001-009c0502.png",
+      "amiiboSeries": "Animal Crossing",
+      "gameSeries": "Animal Crossing"
+    },
+    {
+      "head": "04b90001",
+      "tail": "01600502",
+      "name": "Merengue",
+      "image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_04b90001-01600502.png",
+      "amiiboSeries": "Animal Crossing",
+      "gameSeries": "Animal Crossing"
+    },
+    {
+      "head": "027e0001",
+      "tail": "01690502",
+      "name": "Maple",
+      "image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_027e0001-01690502.png",
+      "amiiboSeries": "Animal Crossing",
+      "gameSeries": "Animal Crossing"
+    },
+    {
+      "head": "02820001",
+      "tail": "01810502",
+      "name": "Stitches",
+      "image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_02820001-01810502.png",
+      "amiiboSeries": "Animal Crossing",
+      "gameSeries": "Animal Crossing"
+    },
+    {
+      "head": "03170001",
+      "tail": "00a60502",
+      "name": "Molly",
+      "image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_03170001-00a60502.png",
+      "amiiboSeries": "Animal Crossing",
+      "gameSeries": "Animal Crossing"
+    },
+    {
+      "head": "04960001",
+      "tail": "00d90502",
+      "name": "Coco",
+      "image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_04960001-00d90502.png",
+      "amiiboSeries": "Animal Crossing",
+      "gameSeries": "Animal Crossing"
+    }
+  ]
+}

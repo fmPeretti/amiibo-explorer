@@ -1,11 +1,42 @@
-{
-  "templates": [
-    {
-      "id": "smash-bros-coins",
-      "name": "Super Smash Bros. Coins",
-      "description": "30mm coins featuring popular Smash Bros. fighters",
-      "author": "Amiibo Coin Generator"
-    }
-  ],
-  "lastUpdated": "2025-01-18T00:00:00.000Z"
-}
+[
+  {
+    "id": "community-ac-cards",
+    "name": "Animal Crossing Card Collection",
+    "description": "Popular Animal Crossing villager cards - perfect for card-sized prints!",
+    "author": "Amiibo Explorer",
+    "templateType": "card",
+    "itemCount": 12
+  },
+  {
+    "id": "community-ac-figures",
+    "name": "Animal Crossing Figures",
+    "description": "The main Animal Crossing amiibo figures collection",
+    "author": "Amiibo Explorer",
+    "templateType": "coin",
+    "itemCount": 8
+  },
+  {
+    "id": "community-mario-collection",
+    "name": "Super Mario Collection",
+    "description": "Classic Super Mario Bros. amiibo figures - Mario, Luigi, Peach, and friends!",
+    "author": "Amiibo Explorer",
+    "templateType": "coin",
+    "itemCount": 10
+  },
+  {
+    "id": "community-nintendo-favorites",
+    "name": "Nintendo All-Stars",
+    "description": "Iconic Nintendo characters from across the gaming universe - the ultimate collection!",
+    "author": "Amiibo Explorer",
+    "templateType": "coin",
+    "itemCount": 12
+  },
+  {
+    "id": "community-zelda-collection",
+    "name": "Legend of Zelda Collection",
+    "description": "Heroes and champions from across Hyrule - Link, Zelda, and more!",
+    "author": "Amiibo Explorer",
+    "templateType": "coin",
+    "itemCount": 10
+  }
+]

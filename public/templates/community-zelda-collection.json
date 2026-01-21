@@ -1,0 +1,95 @@
+{
+  "id": "community-zelda-collection",
+  "name": "Legend of Zelda Collection",
+  "description": "Heroes and champions from across Hyrule - Link, Zelda, and more!",
+  "author": "Amiibo Explorer",
+  "templateType": "coin",
+  "pageSize": "A4",
+  "diameter": 30,
+  "cardWidth": 54,
+  "cardHeight": 85,
+  "margin": 5,
+  "spacing": 5,
+  "items": [
+    {
+      "head": "01010300",
+      "tail": "04140902",
+      "name": "Zelda & Loftwing",
+      "image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01010300-04140902.png",
+      "amiiboSeries": "Legend Of Zelda",
+      "gameSeries": "The Legend of Zelda"
+    },
+    {
+      "head": "01400000",
+      "tail": "03550902",
+      "name": "Guardian",
+      "image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01400000-03550902.png",
+      "amiiboSeries": "Legend Of Zelda",
+      "gameSeries": "The Legend of Zelda"
+    },
+    {
+      "head": "01000000",
+      "tail": "03530902",
+      "name": "Link - Archer",
+      "image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01000000-03530902.png",
+      "amiiboSeries": "Legend Of Zelda",
+      "gameSeries": "The Legend of Zelda"
+    },
+    {
+      "head": "01000000",
+      "tail": "034f0902",
+      "name": "8-Bit Link",
+      "image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01000000-034f0902.png",
+      "amiiboSeries": "Legend Of Zelda",
+      "gameSeries": "The Legend of Zelda"
+    },
+    {
+      "head": "01000000",
+      "tail": "03540902",
+      "name": "Link - Rider",
+      "image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01000000-03540902.png",
+      "amiiboSeries": "Legend Of Zelda",
+      "gameSeries": "The Legend of Zelda"
+    },
+    {
+      "head": "01000100",
+      "tail": "03500902",
+      "name": "Toon Link - The Wind Waker",
+      "image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01000100-03500902.png",
+      "amiiboSeries": "Legend Of Zelda",
+      "gameSeries": "The Legend of Zelda"
+    },
+    {
+      "head": "01010000",
+      "tail": "03560902",
+      "name": "Zelda",
+      "image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01010000-03560902.png",
+      "amiiboSeries": "Legend Of Zelda",
+      "gameSeries": "The Legend of Zelda"
+    },
+    {
+      "head": "01030000",
+      "tail": "024f0902",
+      "name": "Midna & Wolf Link",
+      "image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01030000-024f0902.png",
+      "amiiboSeries": "Legend Of Zelda",
+      "gameSeries": "The Legend of Zelda"
+    },
+    {
+      "head": "01050000",
+      "tail": "03580902",
+      "name": "Daruk",
+      "image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01050000-03580902.png",
+      "amiiboSeries": "Legend Of Zelda",
+      "gameSeries": "The Legend of Zelda"
+    },
+    {
+      "head": "010b0000",
+      "tail": "04a50902",
+      "name": "Tulin",
+      "image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_010b0000-04a50902.png",
+      "amiiboSeries": "Legend Of Zelda",
+      "gameSeries": "The Legend of Zelda"
+    }
+  ]
+}

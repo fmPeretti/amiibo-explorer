@@ -551,6 +551,10 @@ export default function ListsPage() {
         setTimeout(() => setImportToast(null), 3000);
       }
     };
+    reader.onerror = () => {
+      setImportToast("Failed to read file");
+      setTimeout(() => setImportToast(null), 3000);
+    };
     reader.readAsText(file);
     // Reset input so same file can be imported again
     if (fileInputRef.current) {

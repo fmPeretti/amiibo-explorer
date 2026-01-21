@@ -1,0 +1,79 @@
+{
+  "id": "community-ac-figures",
+  "name": "Animal Crossing Figures",
+  "description": "The main Animal Crossing amiibo figures collection",
+  "author": "Amiibo Explorer",
+  "templateType": "coin",
+  "pageSize": "A4",
+  "diameter": 30,
+  "cardWidth": 54,
+  "cardHeight": 85,
+  "margin": 5,
+  "spacing": 5,
+  "items": [
+    {
+      "head": "01c10000",
+      "tail": "02440502",
+      "name": "Lottie",
+      "image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01c10000-02440502.png",
+      "amiiboSeries": "Animal Crossing",
+      "gameSeries": "Animal Crossing"
+    },
+    {
+      "head": "018c0000",
+      "tail": "02430502",
+      "name": "Digby",
+      "image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_018c0000-02430502.png",
+      "amiiboSeries": "Animal Crossing",
+      "gameSeries": "Animal Crossing"
+    },
+    {
+      "head": "01960000",
+      "tail": "024e0502",
+      "name": "Kapp'n",
+      "image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01960000-024e0502.png",
+      "amiiboSeries": "Animal Crossing",
+      "gameSeries": "Animal Crossing"
+    },
+    {
+      "head": "018b0000",
+      "tail": "02460502",
+      "name": "Cyrus",
+      "image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_018b0000-02460502.png",
+      "amiiboSeries": "Animal Crossing",
+      "gameSeries": "Animal Crossing"
+    },
+    {
+      "head": "01880000",
+      "tail": "02410502",
+      "name": "Mabel",
+      "image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01880000-02410502.png",
+      "amiiboSeries": "Animal Crossing",
+      "gameSeries": "Animal Crossing"
+    },
+    {
+      "head": "01810000",
+      "tail": "024b0502",
+      "name": "Isabelle - Summer Outfit",
+      "image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01810000-024b0502.png",
+      "amiiboSeries": "Animal Crossing",
+      "gameSeries": "Animal Crossing"
+    },
+    {
+      "head": "01940000",
+      "tail": "024a0502",
+      "name": "Kicks",
+      "image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_01940000-024a0502.png",
+      "amiiboSeries": "Animal Crossing",
+      "gameSeries": "Animal Crossing"
+    },
+    {
+      "head": "018e0000",
+      "tail": "02490502",
+      "name": "Resetti",
+      "image": "https://raw.githubusercontent.com/8bitDream/AmiiboAPI/master/images/icon_018e0000-02490502.png",
+      "amiiboSeries": "Animal Crossing",
+      "gameSeries": "Animal Crossing"
+    }
+  ]
+}

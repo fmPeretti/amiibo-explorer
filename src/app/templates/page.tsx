@@ -262,6 +262,7 @@ export default function TemplatesPage() {
   const [templates, setTemplates] = useState<TemplateConfig[]>([]);
   const [communityTemplates, setCommunityTemplates] = useState<CommunityTemplate[]>([]);
   const [loadingCommunity, setLoadingCommunity] = useState(true);
+  const [communityError, setCommunityError] = useState(false);
   const [importToast, setImportToast] = useState<string | null>(null);
   const [selectedTemplate, setSelectedTemplate] = useState<TemplateConfig | null>(null);
   const fileInputRef = useRef<HTMLInputElement>(null);
@@ -272,7 +273,7 @@ export default function TemplatesPage() {
     // Load community templates
     getAllCommunityTemplates()
       .then(setCommunityTemplates)
-      .catch(console.error)
+      .catch(() => setCommunityError(true))
       .finally(() => setLoadingCommunity(false));
   }, []);
 
@@ -333,6 +334,10 @@ export default function TemplatesPage() {
         setImportToast("No valid templates found in file");
         setTimeout(() => setImportToast(null), 3000);
       }
+    };
+    reader.onerror = () => {
+      setImportToast("Failed to read file");
+      setTimeout(() => setImportToast(null), 3000);
     };
     reader.readAsText(file);
     if (fileInputRef.current) {
@@ -443,6 +448,16 @@ export default function TemplatesPage() {
             <div className="text-center py-8 bg-white rounded-xl">
               <div className="w-8 h-8 mx-auto mb-3 border-2 border-purple-500 border-t-transparent rounded-full animate-spin" />
               <p className="text-sm text-gray-500">Loading community templates...</p>
+            </div>
+          ) : communityError ? (
+            <div className="text-center py-8 bg-white rounded-xl">
+              <div className="w-10 h-10 mx-auto mb-3 rounded-full bg-red-100 flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-red-500" viewBox="0 0 20 20" fill="currentColor">
+                  <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7 4a1 1 0 11-2 0 1 1 0 012 0zm-1-9a1 1 0 00-1 1v4a1 1 0 102 0V6a1 1 0 00-1-1z" clipRule="evenodd" />
+                </svg>
+              </div>
+              <p className="text-sm text-gray-600 font-medium">Failed to load community templates</p>
+              <p className="text-xs text-gray-400 mt-1">Please try again later</p>
             </div>
           ) : communityTemplates.length === 0 ? (
             <div className="text-center py-8 bg-white rounded-xl">
