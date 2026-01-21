@@ -19,8 +19,10 @@ interface ApiStatusProviderProps {
 }
 
 export function ApiStatusProvider({ children }: ApiStatusProviderProps) {
-  const [status, setStatus] = useState<ApiStatus>("checking");
-  const [message, setMessage] = useState("Checking AmiiboAPI status...");
+  // Default to "online" - assume API works until proven otherwise
+  // This prevents showing "offline" UI before the health check completes
+  const [status, setStatus] = useState<ApiStatus>("online");
+  const [message, setMessage] = useState("");
   const [lastChecked, setLastChecked] = useState<Date | null>(null);
   const [isLoading, setIsLoading] = useState(true);
 

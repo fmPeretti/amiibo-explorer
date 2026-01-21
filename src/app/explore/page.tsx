@@ -179,6 +179,12 @@ export default function ExplorePage() {
                   type="text"
                   value={nameFilter}
                   onChange={(e) => setNameFilter(e.target.value)}
+                  onKeyDown={(e) => {
+                    if (e.key === "Enter") {
+                      handleSearch();
+                      setSidebarOpen(false);
+                    }
+                  }}
                   placeholder="Search by name..."
                   className="w-full h-9 px-3 text-sm border border-gray-300 rounded-md bg-white focus:outline-none focus:ring-2 focus:ring-red-500 focus:border-transparent"
                 />
@@ -320,8 +326,7 @@ export default function ExplorePage() {
                     <button
                       key={suggestion.name}
                       onClick={() => handleSuggestionClick(suggestion.name)}
-                      disabled={apiStatus === "checking"}
-                      className="px-6 py-3 bg-white rounded-full text-base font-semibold text-gray-700 hover:bg-red-500 hover:text-white transition-all shadow-md border-2 border-gray-200 hover:border-red-500 hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed"
+                      className="px-6 py-3 bg-white rounded-full text-base font-semibold text-gray-700 hover:bg-red-500 hover:text-white transition-all shadow-md border-2 border-gray-200 hover:border-red-500 hover:scale-105"
                     >
                       <span className="mr-2 text-xl">{suggestion.emoji}</span>
                       {suggestion.name}
