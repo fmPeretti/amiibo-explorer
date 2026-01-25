@@ -10,6 +10,7 @@ export async function POST(req: Request) {
 
   try {
     const { action, metadata } = await req.json();
+    const { visitor_id, ...rest } = metadata || {};
 
     await fetch(`${supabaseUrl}/rest/v1/analytics`, {
       method: "POST",
@@ -18,7 +19,11 @@ export async function POST(req: Request) {
         apikey: supabaseSecretKey,
         Authorization: `Bearer ${supabaseSecretKey}`,
       },
-      body: JSON.stringify({ action, metadata: metadata || {} }),
+      body: JSON.stringify({
+        action,
+        visitor_id: visitor_id || null,
+        metadata: rest,
+      }),
     });
 
     return NextResponse.json({ ok: true });
