@@ -1,10 +1,10 @@
 import { NextResponse } from "next/server";
 
 const supabaseUrl = process.env.SUPABASE_URL;
-const supabaseServiceKey = process.env.SUPABASE_SERVICE_KEY;
+const supabaseSecretKey = process.env.SUPABASE_SECRET_KEY;
 
 export async function POST(req: Request) {
-  if (!supabaseUrl || !supabaseServiceKey) {
+  if (!supabaseUrl || !supabaseSecretKey) {
     return NextResponse.json({ ok: false }, { status: 500 });
   }
 
@@ -15,8 +15,8 @@ export async function POST(req: Request) {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        apikey: supabaseServiceKey,
-        Authorization: `Bearer ${supabaseServiceKey}`,
+        apikey: supabaseSecretKey,
+        Authorization: `Bearer ${supabaseSecretKey}`,
       },
       body: JSON.stringify({ action, metadata: metadata || {} }),
     });
