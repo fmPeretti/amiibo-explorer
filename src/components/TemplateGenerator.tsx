@@ -14,6 +14,7 @@ import {
   exportTemplate,
   importTemplates,
 } from "@/lib/template-storage";
+import { trackEvent } from "@/lib/analytics";
 
 // Page sizes in mm - converted to pixels at 300 DPI for print quality
 const DPI = 300;
@@ -71,21 +72,6 @@ export default function TemplateGenerator({ items, listName, onClose, initialCon
   const [progress, setProgress] = useState(0);
   const [progressText, setProgressText] = useState("");
   const [generatedImages, setGeneratedImages] = useState<string[]>([]);
-
-  // Emit flag values to DOM for Vercel Web Analytics
-  const emitFlag = useCallback((flagName: string) => {
-    const existing = document.querySelector('script[data-flag-values]');
-    const currentFlags = existing ? JSON.parse(existing.textContent || '{}') : {};
-    currentFlags[flagName] = true;
-
-    if (existing) existing.remove();
-
-    const script = document.createElement('script');
-    script.type = 'application/json';
-    script.setAttribute('data-flag-values', '');
-    script.textContent = JSON.stringify(currentFlags);
-    document.head.appendChild(script);
-  }, []);
 
   // Image adjustments per item (by key) - initialize from initialConfig if available
   const [imageAdjustments, setImageAdjustments] = useState<Map<string, ImageAdjustment>>(() => {
@@ -867,8 +853,12 @@ export default function TemplateGenerator({ items, listName, onClose, initialCon
       setGeneratedImages(pages);
       setStep("preview");
 
-      // Emit flag for template generation
-      emitFlag("template-generated");
+      // Track template generation
+      trackEvent("template_generated", {
+        template_type: templateType,
+        item_count: items.length,
+        page_count: pages.length,
+      });
     } catch (error) {
       console.error("Failed to generate images:", error);
       alert("Failed to generate images. Please try again.");
@@ -892,8 +882,12 @@ export default function TemplateGenerator({ items, listName, onClose, initialCon
       setTimeout(() => downloadImage(img, i), i * 200);
     });
 
-    // Emit flag for images download
-    emitFlag("template-downloaded");
+    // Track images download
+    trackEvent("template_downloaded_images", {
+      template_type: templateType,
+      item_count: items.length,
+      page_count: generatedImages.length,
+    });
   };
 
   // Download all pages as a merged PDF
@@ -938,8 +932,12 @@ export default function TemplateGenerator({ items, listName, onClose, initialCon
       pdf.save(`${listName}-${templateType}-${generatedImages.length}pages.pdf`);
       setProgressText("PDF saved!");
 
-      // Emit flag for PDF download
-      emitFlag("template-downloaded");
+      // Track PDF download
+      trackEvent("template_downloaded_pdf", {
+        template_type: templateType,
+        item_count: items.length,
+        page_count: generatedImages.length,
+      });
     } catch (error) {
       console.error("Failed to generate PDF:", error);
       alert("Failed to generate PDF. Please try downloading images individually.");
