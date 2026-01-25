@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef, useCallback, useMemo } from "react";
 import { createPortal } from "react-dom";
+import { track } from "@vercel/analytics";
 import { AmiiboListItem } from "@/lib/types";
 import { BACK_DESIGNS, generateBackDesignImage } from "@/lib/back-designs";
 import {
@@ -850,6 +851,14 @@ export default function TemplateGenerator({ items, listName, onClose, initialCon
 
       setGeneratedImages(pages);
       setStep("preview");
+
+      // Track template generation with flag
+      track("Template Generated", {
+        templateType,
+        pageSize,
+        itemCount: items.length,
+        pageCount: pages.length,
+      }, { flags: ["template-generated"] });
     } catch (error) {
       console.error("Failed to generate images:", error);
       alert("Failed to generate images. Please try again.");
@@ -872,6 +881,13 @@ export default function TemplateGenerator({ items, listName, onClose, initialCon
     generatedImages.forEach((img, i) => {
       setTimeout(() => downloadImage(img, i), i * 200);
     });
+
+    // Track images download with flag
+    track("Template Downloaded", {
+      format: "images",
+      templateType,
+      pageCount: generatedImages.length,
+    }, { flags: ["template-downloaded-images"] });
   };
 
   // Download all pages as a merged PDF
@@ -915,6 +931,13 @@ export default function TemplateGenerator({ items, listName, onClose, initialCon
       // Download the PDF
       pdf.save(`${listName}-${templateType}-${generatedImages.length}pages.pdf`);
       setProgressText("PDF saved!");
+
+      // Track PDF download with flag
+      track("Template Downloaded", {
+        format: "pdf",
+        templateType,
+        pageCount: generatedImages.length,
+      }, { flags: ["template-downloaded-pdf"] });
     } catch (error) {
       console.error("Failed to generate PDF:", error);
       alert("Failed to generate PDF. Please try downloading images individually.");
