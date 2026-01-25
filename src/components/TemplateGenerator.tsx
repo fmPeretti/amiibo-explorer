@@ -56,6 +56,20 @@ function loadImage(url: string): Promise<HTMLImageElement> {
   });
 }
 
+// Emit flag values to DOM for Vercel Web Analytics
+function emitFlagValues(flags: Record<string, boolean>) {
+  // Remove existing flag values script if any
+  const existing = document.querySelector('script[data-flag-values]');
+  if (existing) existing.remove();
+
+  // Create new script tag with flag values
+  const script = document.createElement('script');
+  script.type = 'application/json';
+  script.setAttribute('data-flag-values', '');
+  script.textContent = JSON.stringify(flags);
+  document.body.appendChild(script);
+}
+
 export default function TemplateGenerator({ items, listName, onClose, initialConfig }: TemplateGeneratorProps) {
   const [mounted, setMounted] = useState(false);
   // If we have initialConfig, skip directly to adjust step
@@ -852,13 +866,14 @@ export default function TemplateGenerator({ items, listName, onClose, initialCon
       setGeneratedImages(pages);
       setStep("preview");
 
-      // Track template generation with flag
+      // Emit flag to DOM and track template generation
+      emitFlagValues({ "template-generated": true });
       track("Template Generated", {
         templateType,
         pageSize,
         itemCount: items.length,
         pageCount: pages.length,
-      }, { flags: ["template-generated"] });
+      });
     } catch (error) {
       console.error("Failed to generate images:", error);
       alert("Failed to generate images. Please try again.");
@@ -882,12 +897,13 @@ export default function TemplateGenerator({ items, listName, onClose, initialCon
       setTimeout(() => downloadImage(img, i), i * 200);
     });
 
-    // Track images download with flag
+    // Emit flag to DOM and track images download
+    emitFlagValues({ "template-downloaded-images": true });
     track("Template Downloaded", {
       format: "images",
       templateType,
       pageCount: generatedImages.length,
-    }, { flags: ["template-downloaded-images"] });
+    });
   };
 
   // Download all pages as a merged PDF
@@ -932,12 +948,13 @@ export default function TemplateGenerator({ items, listName, onClose, initialCon
       pdf.save(`${listName}-${templateType}-${generatedImages.length}pages.pdf`);
       setProgressText("PDF saved!");
 
-      // Track PDF download with flag
+      // Emit flag to DOM and track PDF download
+      emitFlagValues({ "template-downloaded-pdf": true });
       track("Template Downloaded", {
         format: "pdf",
         templateType,
         pageCount: generatedImages.length,
-      }, { flags: ["template-downloaded-pdf"] });
+      });
     } catch (error) {
       console.error("Failed to generate PDF:", error);
       alert("Failed to generate PDF. Please try downloading images individually.");
